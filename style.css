@@ -1,14 +1,21 @@
+/* @font-face {
+  font-family: Heina;
+  src: url(fonts/Heina.ttf);
+} */
+
 * {
   font-family: monospace;
   background-color: #f5f1e4;
 }
 
 h1 {
-  border: 0 10;
-  font-size: 30px;
+  padding: 0 20px;
+  font-size: 36px;
+  text-align: center;
 }
 
 h1 a {
+  /* font-family: Heina; */
   style: none;
   color: deeppink;
   text-decoration: none;
@@ -16,6 +23,7 @@ h1 a {
 
 h1 a:hover {
   color: pink;
+  transition: 0.3s;
 }
 
 h2 {
@@ -42,11 +50,14 @@ nav dl dt a {
   color: deeppink;
   text-decoration: none;
   background-color: #b7cd78;
-  font-size: 18px;
+  font-size: 20px;
+  /* font-family: Heina; */
+  padding: 10px;
 }
 
 nav dl dt a:hover {
   color: pink;
+  transition: 0.3s;
 }
 
 .content {
@@ -56,20 +67,85 @@ nav dl dt a:hover {
 .content p {
   color: deeppink;
   font-size: 18px;
+  margin: 10px;
 }
 
+.content p a {
+  text-decoration: none;
+  color: deeppink;
+}
+
+.covericons {
+  padding: 20px;
+}
+
+.covericons a {
+  color: deeppink;
+  font-size: 30px;
+  padding: 0 20px;
+  border: 10px;
+  display: inline-block;
+}
+
+.covericons a .icontext {
+  visibility: hidden;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1;
+
+  text-align: center;
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.covericons a:hover .icontext {
+  visibility: visible;
+}
+
+.container {
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 45%;
+  padding: 1%;
+  margin: auto;
+}
+
+.col:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.pic_description {
+  visibility: hidden;
+}
+
+.col:hover .pic_description {
+  visibility: visible;
+  transition: 0.3s;
+
+}
 
 footer {
   list-style: none;
   text-align: center;
   color: deeppink;
   background-color: #b7cd78;
-  padding: 15px;
-  font-size: 14px;
+  padding: 5px 0px 10px 0px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 footer dl {
   background-color: #b7cd78;
+  font-size: 18px;
 }
 
 footer dl dt {
@@ -89,8 +165,10 @@ footer dl dt a i {
 
 footer dl dt a:hover {
   color: pink;
+  transition: 0.3s;
 }
 
 footer p {
   background-color: #b7cd78;
+  /* font-family: Heina; */
 }
